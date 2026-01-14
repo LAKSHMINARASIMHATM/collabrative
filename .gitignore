@@ -1,1 +1,35 @@
 node_modules
+.env
+        .env.local
+        .env.local.example
+        .gitignore
+        .next/
+        Dockerfile
+        app/
+        components.json
+        components/
+        demo-project/
+        docker-compose.yml
+        docs/
+        electron-builder.json
+        electron/
+        eslint.config.mjs
+        examples/
+        hooks/
+        jest.config.json
+        k8s/
+        lib/
+        next-env.d.ts
+        next.config.mjs
+        package.json
+        pnpm-lock.yaml
+        postcss.config.mjs
+        proxy.ts
+        public/
+        scripts/
+        server/
+        start-electron.js
+        styles/
+        test-share.js
+        tsconfig.json
+        tsconfig.tsbuildinfo
