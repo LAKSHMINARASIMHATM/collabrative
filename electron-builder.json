@@ -1,0 +1,40 @@
+{
+    "appId": "com.codesync.ide",
+    "productName": "CodeSync IDE",
+    "directories": {
+        "buildResources": "electron/assets",
+        "output": "dist-electron"
+    },
+    "files": [
+        "out/**/*",
+        "electron/**/*",
+        "package.json"
+    ],
+    "mac": {
+        "category": "public.app-category.developer-tools",
+        "icon": "electron/assets/icon.icns",
+        "target": [
+            "dmg",
+            "zip"
+        ]
+    },
+    "win": {
+        "icon": "electron/assets/icon.ico",
+        "target": [
+            "nsis",
+            "portable"
+        ]
+    },
+    "linux": {
+        "icon": "electron/assets/icon.png",
+        "target": [
+            "AppImage",
+            "deb"
+        ],
+        "category": "Development"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true
+    }
+}

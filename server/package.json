@@ -1,0 +1,33 @@
+{
+    "name": "collab-editor-server",
+    "version": "1.0.0",
+    "description": "Real-time collaboration server",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node start-server.cjs",
+        "dev": "nodemon --inspect start-server.cjs"
+    },
+    "dependencies": {
+        "@ai-sdk/openai": "^2.0.85",
+        "@types/three": "^0.182.0",
+        "dotenv": "^16.3.1",
+        "lib0": "^0.2.81",
+        "mongodb": "^6.3.0",
+        "redis": "^4.6.12",
+        "three": "^0.182.0",
+        "ws": "^8.16.0",
+        "y-protocols": "^1.0.6",
+        "y-redis": "^1.0.2",
+        "y-websocket": "^1.5.0",
+        "yjs": "^13.6.10"
+    },
+    "devDependencies": {
+        "@types/node": "^20.19.26",
+        "@types/ws": "^8.18.1",
+        "nodemon": "^3.0.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    }
+}

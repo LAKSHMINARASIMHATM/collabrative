@@ -1,0 +1,988 @@
+[00:00:11.794] Server  LOG     
+[00:00:11.796] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:11.800] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:11.806] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:11.806] Server  LOG     
+[00:00:15.332] Server  LOG      ✓ Ready in 14s
+[00:00:15.404] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\shared\lib\router\utils\sorted-routes.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.429] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.432] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.435] Server  ERROR   Error: You cannot use different slug names for the same dynamic path ('roomId' !== 'userId').
+[00:00:15.452] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\shared\lib\router\utils\sorted-routes.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.465] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.467] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.468] Server  ERROR    ⨯ "unhandledRejection:" Error: You cannot use different slug names for the same dynamic path ('roomId' !== 'userId').
+[00:00:15.479] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\shared\lib\router\utils\sorted-routes.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.481] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\server\route-matcher-managers\default-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.514] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\server\route-matcher-managers\dev-route-matcher-manager.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.517] Server  ERROR    ⨯ "unhandledRejection: " Error: You cannot use different slug names for the same dynamic path ('roomId' !== 'userId').
+[00:00:15.636] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\shared\lib\router\utils\sorted-routes.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.647] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.648] Server  WARN     ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('userId' !== 'roomId').
+[00:00:43.246] Server  LOG      ○ Compiling / ...
+[00:00:53.345] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:54.362] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:00:54.362] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 1/3)
+[00:00:54.362] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:54.362] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768379234858}
+[00:01:04.319] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:01:04.319] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:01:06.324] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 2/3)
+[00:01:08.110] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:08.250] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:01:08.250] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 1/3)
+[00:01:08.250] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:08.250] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/sign-up color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/auth/sign-up","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768379248746}
+[00:01:18.808] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:01:18.808] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:01:20.819] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 2/3)
+[00:01:31.134] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:01:31.134] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:01:33.365] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:33.668] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:01:33.668] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 1/3)
+[00:01:33.668] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:33.668] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768379274173}
+[00:01:38.622] Server  LOG      ○ Compiling /test-editor ...
+[00:01:43.646] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:01:43.646] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:01:44.573] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/test-editor color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/test-editor","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768379285062}
+[00:01:45.781] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 2/3)
+[00:01:50.747] Browser ERROR   unhandledRejection: {"type":"cancelation","msg":"operation is manually canceled"}
+[00:01:52.675] Browser WARN    WARNING: Invalid layout total size: 50%. Layout normalization will be applied.
+[00:01:52.675] Browser WARN    WARNING: Invalid layout total size: 50%. Layout normalization will be applied.
+[00:01:54.275] Browser WARN    WARNING: Panel id and order props recommended when panels are dynamically rendered
+[00:01:55.710] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:01:55.710] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:01:57.725] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 3/3)
+[00:01:57.900] Browser WARN    WARNING: Invalid layout total size: 50%. Layout normalization will be applied.
+[00:02:04.026] Browser LOG     EnhancedCollaboratorsPanel rendering with user: test-user-id
+[00:02:04.026] Browser LOG     EnhancedCollaboratorsPanel rendering with user: test-user-id
+[00:02:05.833] Browser LOG     EnhancedCollaboratorsPanel rendering with user: test-user-id
+[00:02:05.833] Browser LOG     EnhancedCollaboratorsPanel rendering with user: test-user-id
+[00:02:05.833] Browser WARN    WARNING: Invalid layout total size: 50%. Layout normalization will be applied.
+[00:02:05.833] Browser LOG     EnhancedCollaboratorsPanel rendering with user: test-user-id
+[00:02:05.833] Browser LOG     EnhancedCollaboratorsPanel rendering with user: test-user-id
+[00:02:09.010] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:02:09.010] Browser LOG     Entering fallback mode - collaboration disabled
+[00:04:37.891] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:38.359] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+-                         data-jetski-tab-id="1382637062"
+                        >
+                  ...
+
+[00:04:38.359] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:04:38.359] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 1/3)
+[00:04:38.722] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:04:38.722] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768379459222}
+[00:04:48.349] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:04:48.350] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:04:50.354] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 2/3)
+[00:05:00.430] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:05:00.430] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:05:02.512] Browser LOG     Attempting WebSocket connection to: ws://localhost:3000/api/collaboration (Attempt 3/3)
+[00:05:12.612] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:05:12.612] Browser LOG     Entering fallback mode - collaboration disabled
+[00:06:24.574] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./lib/collaboration/collaboration-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:06:25.761] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./lib/collaboration/collaboration-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:06:25.774] Server  LOG      ✓ Compiled in 4.1s
+[00:06:28.090] Server  ERROR   Yjs was already imported. This breaks constructor checks and will lead to issues! - https://github.com/yjs/yjs/issues/438
+[00:06:46.876] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:48.557] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:06:48.557] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 1/3)
+[00:06:48.557] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:06:48.557] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768379588826}
+[00:06:50.636] Browser WARN    WebSocket connection error - server unavailable
+[00:06:50.636] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:06:50.636] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:06:52.636] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 2/3)
+[00:06:53.310] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:06:53.310] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:06:55.952] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 3/3)
+[00:06:55.952] Browser WARN    WebSocket connection error - server unavailable
+[00:06:55.952] Browser LOG     Entering fallback mode - collaboration disabled
+[00:06:55.952] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:06:59.993] Browser WARN    WebSocket connection error - server unavailable
+[00:06:59.993] Browser LOG     Entering fallback mode - collaboration disabled
+[00:06:59.993] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:06:59.993] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:06:59.993] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:00.127] Browser WARN    WebSocket connection error - server unavailable
+[00:07:00.128] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:00.128] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:02.395] Browser WARN    WebSocket connection error - server unavailable
+[00:07:02.395] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:02.400] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:02.894] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:07:02.894] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:03.795] Browser WARN    WebSocket connection error - server unavailable
+[00:07:03.795] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:03.795] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:06.178] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:07:06.178] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:06.178] Browser WARN    WebSocket connection error - server unavailable
+[00:07:06.179] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:06.377] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:07.613] Browser WARN    WebSocket connection error - server unavailable
+[00:07:07.613] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:07.613] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:11.455] Browser WARN    WebSocket connection error - server unavailable
+[00:07:11.455] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:11.455] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:17.418] Browser WARN    WebSocket connection error - server unavailable
+[00:07:17.418] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:17.418] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:17.418] Browser WARN    WebSocket connection error - server unavailable
+[00:07:17.418] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:17.418] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:19.808] Browser WARN    WebSocket connection error - server unavailable
+[00:07:19.808] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:19.808] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:21.939] Browser WARN    WebSocket connection error - server unavailable
+[00:07:21.940] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:21.940] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:22.593] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/test-editor color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/test-editor","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768379622574}
+[00:07:23.930] Browser WARN    WebSocket connection error - server unavailable
+[00:07:23.930] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:23.930] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:27.349] Browser WARN    WebSocket connection error - server unavailable
+[00:07:27.350] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:27.350] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:28.722] Browser WARN    WebSocket connection error - server unavailable
+[00:07:28.722] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:28.722] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:30.760] Browser WARN    WebSocket connection error - server unavailable
+[00:07:30.760] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:30.760] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:32.300] Browser WARN    WebSocket connection error - server unavailable
+[00:07:32.300] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:32.300] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:34.800] Browser WARN    WebSocket connection error - server unavailable
+[00:07:34.800] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:34.800] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:36.993] Browser WARN    WebSocket connection error - server unavailable
+[00:07:36.993] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:36.993] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:38.567] Browser WARN    WebSocket connection error - server unavailable
+[00:07:38.567] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:38.567] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:40.660] Browser WARN    WebSocket connection error - server unavailable
+[00:07:40.660] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:40.660] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:42.519] Browser WARN    WebSocket connection error - server unavailable
+[00:07:42.519] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:42.519] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:44.761] Browser WARN    WebSocket connection error - server unavailable
+[00:07:44.761] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:44.761] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:47.783] Browser WARN    WebSocket connection error - server unavailable
+[00:07:47.783] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:47.783] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:48.947] Browser WARN    WebSocket connection error - server unavailable
+[00:07:48.947] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:48.947] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:50.888] Browser WARN    WebSocket connection error - server unavailable
+[00:07:50.888] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:50.888] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:53.057] Browser WARN    WebSocket connection error - server unavailable
+[00:07:53.057] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:53.057] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:07:55.054] Browser WARN    WebSocket connection error - server unavailable
+[00:07:55.054] Browser LOG     Entering fallback mode - collaboration disabled
+[00:07:55.054] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:02.633] Browser WARN    WebSocket connection error - server unavailable
+[00:08:02.633] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:02.633] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:02.633] Browser WARN    WebSocket connection error - server unavailable
+[00:08:02.633] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:02.633] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:03.502] Browser WARN    WebSocket connection error - server unavailable
+[00:08:03.502] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:03.502] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:05.244] Browser ERROR   unhandledRejection: {"type":"cancelation","msg":"operation is manually canceled"}
+[00:08:07.515] Browser WARN    WebSocket connection error - server unavailable
+[00:08:07.515] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:07.515] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:09.572] Browser WARN    WebSocket connection error - server unavailable
+[00:08:09.572] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:09.572] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:11.614] Browser WARN    WebSocket connection error - server unavailable
+[00:08:11.614] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:11.614] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:13.664] Browser WARN    WebSocket connection error - server unavailable
+[00:08:13.664] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:13.664] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:15.720] Browser WARN    WebSocket connection error - server unavailable
+[00:08:15.720] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:15.720] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:18.427] Browser WARN    WebSocket connection error - server unavailable
+[00:08:18.428] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:18.428] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:21.039] Browser WARN    WebSocket connection error - server unavailable
+[00:08:21.039] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:21.039] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:23.101] Browser WARN    WebSocket connection error - server unavailable
+[00:08:23.102] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:23.102] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:25.969] Browser WARN    WebSocket connection error - server unavailable
+[00:08:25.969] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:25.969] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:08:28.024] Browser WARN    WebSocket connection error - server unavailable
+[00:08:28.024] Browser LOG     Entering fallback mode - collaboration disabled
+[00:08:28.024] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:09:11.423] Browser WARN    WebSocket connection error - server unavailable
+[00:09:11.530] Browser LOG     Entering fallback mode - collaboration disabled
+[00:09:11.533] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:09:11.533] Browser WARN    WebSocket connection error - server unavailable
+[00:09:11.533] Browser LOG     Entering fallback mode - collaboration disabled
+[00:09:11.533] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:09:15.694] Browser WARN    WebSocket connection error - server unavailable
+[00:09:15.694] Browser LOG     Entering fallback mode - collaboration disabled
+[00:09:15.694] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:09:17.746] Browser WARN    WebSocket connection error - server unavailable
+[00:09:17.746] Browser LOG     Entering fallback mode - collaboration disabled
+[00:09:17.746] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:09:19.809] Browser WARN    WebSocket connection error - server unavailable
+[00:09:19.809] Browser LOG     Entering fallback mode - collaboration disabled
+[00:09:19.809] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:09:21.729] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:09:21.729] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:09:21.933] Browser WARN    WebSocket connection error - server unavailable
+[00:09:21.933] Browser LOG     Entering fallback mode - collaboration disabled
+[00:09:21.933] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:09:25.576] Browser WARN    WebSocket connection error - server unavailable
+[00:09:25.577] Browser LOG     Entering fallback mode - collaboration disabled
+[00:09:25.577] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:09:27.638] Browser WARN    WebSocket connection error - server unavailable
+[00:09:27.638] Browser LOG     Entering fallback mode - collaboration disabled
+[00:09:27.638] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:01.674] Browser WARN    WebSocket connection error - server unavailable
+[00:10:01.676] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:01.676] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:05.414] Browser WARN    WebSocket connection error - server unavailable
+[00:10:05.414] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:05.414] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:05.443] Browser WARN    WebSocket connection error - server unavailable
+[00:10:05.443] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:05.443] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:06.074] Browser WARN    WebSocket connection error - server unavailable
+[00:10:06.075] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:06.075] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:07.941] Browser WARN    WebSocket connection error - server unavailable
+[00:10:07.941] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:07.941] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:12.194] Browser WARN    WebSocket connection error - server unavailable
+[00:10:12.194] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:12.194] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:14.861] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./lib/collaboration/collaboration-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:10:14.874] Browser WARN    WebSocket connection error - server unavailable
+[00:10:14.874] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:14.874] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:14.874] Browser WARN    WebSocket connection error - server unavailable
+[00:10:14.874] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:14.874] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:14.874] Browser WARN    WebSocket connection error - server unavailable
+[00:10:14.874] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:14.874] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:14.950] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./lib/collaboration/collaboration-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:10:16.712] Server  ERROR   Yjs was already imported. This breaks constructor checks and will lead to issues! - https://github.com/yjs/yjs/issues/438
+[00:10:25.717] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:47.399] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:48.835] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:10:48.835] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 1/3)
+[00:10:49.400] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:49.400] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768379829898}
+[00:10:53.164] Browser WARN    WebSocket connection error - server unavailable
+[00:10:53.164] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:10:53.165] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:53.830] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 2/3)
+[00:10:56.543] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:10:56.544] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:10:58.961] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 3/3)
+[00:10:58.970] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:10:58.970] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:59.254] Browser WARN    WebSocket connection error - server unavailable
+[00:10:59.254] Browser LOG     Entering fallback mode - collaboration disabled
+[00:10:59.254] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:00.854] Browser WARN    WebSocket connection error - server unavailable
+[00:11:00.854] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:00.855] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:02.896] Browser WARN    WebSocket connection error - server unavailable
+[00:11:02.896] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:02.896] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:03.871] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:11:03.872] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:05.007] Browser WARN    WebSocket connection error - server unavailable
+[00:11:05.008] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:05.008] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:06.974] Browser WARN    WebSocket connection error - server unavailable
+[00:11:06.974] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:06.974] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:07.500] Server  LOG      ✓ Compiled in 16.1s
+[00:11:10.862] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:11:10.862] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:11.803] Browser WARN    WebSocket connection error - server unavailable
+[00:11:11.803] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:11.803] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:16.853] Browser WARN    WebSocket connection error - server unavailable
+[00:11:16.854] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:16.854] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:17.506] Server  LOG      ✓ Compiled in 3.3s
+[00:11:18.510] Browser WARN    WebSocket connection error - server unavailable
+[00:11:18.510] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:18.510] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:20.553] Browser WARN    WebSocket connection error - server unavailable
+[00:11:20.553] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:20.553] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:22.581] Browser WARN    WebSocket connection error - server unavailable
+[00:11:22.581] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:22.582] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:25.219] Browser WARN    WebSocket connection error - server unavailable
+[00:11:25.219] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:25.219] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:27.354] Browser WARN    WebSocket connection error - server unavailable
+[00:11:27.354] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:27.354] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:29.441] Browser WARN    WebSocket connection error - server unavailable
+[00:11:29.441] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:29.442] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:31.538] Browser WARN    WebSocket connection error - server unavailable
+[00:11:31.542] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:31.542] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:33.532] Browser WARN    WebSocket connection error - server unavailable
+[00:11:33.532] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:33.532] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:35.896] Browser WARN    WebSocket connection error - server unavailable
+[00:11:35.896] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:35.896] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:38.179] Browser WARN    WebSocket connection error - server unavailable
+[00:11:38.179] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:38.179] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:39.643] Browser WARN    WebSocket connection error - server unavailable
+[00:11:39.643] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:39.643] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:41.770] Browser WARN    WebSocket connection error - server unavailable
+[00:11:41.770] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:41.770] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:43.716] Browser WARN    WebSocket connection error - server unavailable
+[00:11:43.716] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:43.716] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:45.752] Browser WARN    WebSocket connection error - server unavailable
+[00:11:45.752] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:45.753] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:47.796] Browser WARN    WebSocket connection error - server unavailable
+[00:11:47.796] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:47.796] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:49.827] Browser WARN    WebSocket connection error - server unavailable
+[00:11:49.828] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:49.828] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:51.864] Browser WARN    WebSocket connection error - server unavailable
+[00:11:51.865] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:51.865] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:53.977] Browser WARN    WebSocket connection error - server unavailable
+[00:11:53.977] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:53.977] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:56.022] Browser WARN    WebSocket connection error - server unavailable
+[00:11:56.022] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:56.022] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:11:58.100] Browser WARN    WebSocket connection error - server unavailable
+[00:11:58.100] Browser LOG     Entering fallback mode - collaboration disabled
+[00:11:58.100] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:06.110] Browser WARN    WebSocket connection error - server unavailable
+[00:12:06.110] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:06.110] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:08.136] Browser WARN    WebSocket connection error - server unavailable
+[00:12:08.136] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:08.136] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:10.167] Browser WARN    WebSocket connection error - server unavailable
+[00:12:10.167] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:10.167] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:18.280] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\shared\lib\router\utils\sorted-routes.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:18.304] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:18.340] Server  WARN     ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('userId' !== 'roomId').
+[00:12:18.341] Browser WARN    WebSocket connection error - server unavailable
+[00:12:18.341] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:18.341] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:18.789] Server  LOG      ✓ Compiled in 3.1s
+[00:12:20.361] Browser WARN    WebSocket connection error - server unavailable
+[00:12:20.361] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:20.361] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:22.587] Browser WARN    WebSocket connection error - server unavailable
+[00:12:22.587] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:22.587] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:28.526] Browser WARN    WebSocket connection error - server unavailable
+[00:12:28.527] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:28.527] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:31.741] Browser WARN    WebSocket connection error - server unavailable
+[00:12:31.741] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:31.741] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:32.901] Browser WARN    WebSocket connection error - server unavailable
+[00:12:32.901] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:32.901] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:37.085] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\shared\lib\router\utils\sorted-routes.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:37.087] Server  ERROR   D:\real-time-code-editor (2)\node_modules\.pnpm\next@16.0.7_@babel+core@7.2_37aa62a12a629c79ec0e1f9665a79769\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:37.090] Server  WARN     ⚠ "Failed to reload dynamic routes:" Error: You cannot use different slug names for the same dynamic path ('userId' !== 'roomId').
+[00:12:43.039] Browser WARN    WebSocket connection error - server unavailable
+[00:12:43.039] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:43.039] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:45.991] Browser WARN    WebSocket connection error - server unavailable
+[00:12:45.991] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:45.991] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:49.902] Browser WARN    WebSocket connection error - server unavailable
+[00:12:49.902] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:49.902] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:12:55.949] Browser WARN    WebSocket connection error - server unavailable
+[00:12:55.949] Browser LOG     Entering fallback mode - collaboration disabled
+[00:12:55.949] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:13:01.514] Server  LOG      ✓ Compiled in 1032ms
+[00:13:03.585] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./lib/collaboration/collaboration-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:13:03.725] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:13:03.725] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 1/3)
+[00:13:03.725] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:13:03.725] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/test-editor color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/test-editor","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768379811519}
+[00:13:03.725] Browser WARN    WebSocket connection error - server unavailable
+[00:13:03.725] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:13:03.725] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:13:03.725] Browser WARN    Unexpected import of module [project]/components/ide/ide-workspace.tsx [app-client] (ecmascript, next/dynamic entry) from module [project]/app/test-editor/page.tsx [app-client] (ecmascript), which was deleted by an HMR update
+[00:13:03.793] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./lib/collaboration/collaboration-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:13:03.942] Browser WARN    WebSocket connection error - server unavailable
+[00:13:03.942] Browser LOG     Entering fallback mode - collaboration disabled
+[00:13:03.942] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:13:04.644] Server  ERROR   Yjs was already imported. This breaks constructor checks and will lead to issues! - https://github.com/yjs/yjs/issues/438
+[00:13:06.831] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./lib/collaboration/collaboration-context.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:13:08.258] Server  ERROR   Yjs was already imported. This breaks constructor checks and will lead to issues! - https://github.com/yjs/yjs/issues/438
+[00:13:08.738] Browser WARN    WebSocket connection error - server unavailable
+[00:13:08.738] Browser LOG     Entering fallback mode - collaboration disabled
+[00:13:08.738] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:16.949] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:16.950] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:14:16.950] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 1/3)
+[00:14:16.950] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:14:16.950] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768380034721}
+[00:14:18.880] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:19.040] Browser WARN    WebSocket connection error - server unavailable
+[00:14:19.040] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:14:19.040] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:21.288] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 2/3)
+[00:14:22.162] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:14:22.162] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:24.685] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 3/3)
+[00:14:24.685] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:14:24.685] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:25.744] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:25.744] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:14:25.744] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 1/3)
+[00:14:25.744] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:14:25.744] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/test-editor color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/test-editor","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768380045075}
+[00:14:26.042] Browser WARN    WebSocket connection error - server unavailable
+[00:14:26.042] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:26.042] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:28.039] Browser WARN    WebSocket connection error - server unavailable
+[00:14:28.039] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:28.039] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:30.289] Browser WARN    WebSocket connection error - server unavailable
+[00:14:30.290] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:14:30.290] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:31.693] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:14:31.693] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:32.227] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 2/3)
+[00:14:32.371] Browser WARN    WebSocket connection error - server unavailable
+[00:14:32.371] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:32.371] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:34.454] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:14:34.454] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:14:35.192] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:14:35.192] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:35.192] Browser WARN    WebSocket connection error - server unavailable
+[00:14:35.192] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:35.192] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:35.955] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 3/3)
+[00:14:36.121] Browser WARN    WebSocket connection error - server unavailable
+[00:14:36.122] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:36.122] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:38.155] Browser WARN    WebSocket connection error - server unavailable
+[00:14:38.155] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:38.155] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:40.369] Browser WARN    WebSocket connection error - server unavailable
+[00:14:40.369] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:40.369] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:40.800] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/test-editor color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/test-editor","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768380061254}
+[00:14:44.984] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:14:44.984] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:45.158] Browser WARN    WebSocket connection error - server unavailable
+[00:14:45.158] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:45.158] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:47.265] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:14:47.265] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:47.265] Browser WARN    WebSocket connection error - server unavailable
+[00:14:47.265] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:47.265] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:50.357] Browser WARN    WebSocket connection error - server unavailable
+[00:14:50.357] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:50.357] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:51.508] Browser WARN    WebSocket connection error - server unavailable
+[00:14:51.508] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:51.508] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:51.764] Browser WARN    WebSocket connection error - server unavailable
+[00:14:51.764] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:51.764] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:54.169] Browser WARN    WebSocket connection error - server unavailable
+[00:14:54.169] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:54.169] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:54.418] Browser WARN    WebSocket connection error - server unavailable
+[00:14:54.418] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:54.419] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:56.826] Browser WARN    WebSocket connection error - server unavailable
+[00:14:56.826] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:56.826] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:14:58.464] Browser WARN    WebSocket connection error - server unavailable
+[00:14:58.464] Browser LOG     Entering fallback mode - collaboration disabled
+[00:14:58.464] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:00.547] Browser WARN    WebSocket connection error - server unavailable
+[00:15:00.547] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:00.547] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:04.173] Browser WARN    WebSocket connection error - server unavailable
+[00:15:04.173] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:04.173] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:04.651] Browser WARN    WebSocket connection error - server unavailable
+[00:15:04.651] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:04.651] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:23.136] Browser WARN    WebSocket connection error - server unavailable
+[00:15:23.136] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:23.136] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:23.136] Browser WARN    WebSocket connection error - server unavailable
+[00:15:23.136] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:23.136] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:23.136] Browser WARN    WebSocket connection error - server unavailable
+[00:15:23.136] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:23.136] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:34.131] Browser WARN    WebSocket connection error - server unavailable
+[00:15:34.131] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:34.131] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:34.131] Browser WARN    WebSocket connection error - server unavailable
+[00:15:34.131] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:34.131] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:36.866] Browser WARN    WebSocket connection error - server unavailable
+[00:15:36.866] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:36.866] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:36.866] Browser WARN    WebSocket connection error - server unavailable
+[00:15:36.866] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:36.866] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:39.000] Server  ERROR   Yjs was already imported. This breaks constructor checks and will lead to issues! - https://github.com/yjs/yjs/issues/438
+[00:15:39.147] Browser WARN    WebSocket connection error - server unavailable
+[00:15:39.147] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:39.147] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:40.430] Browser WARN    WebSocket connection error - server unavailable
+[00:15:40.430] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:40.430] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:40.629] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:41.022] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:15:41.022] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 1/3)
+[00:15:41.022] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:41.022] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/sign-up color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/auth/sign-up","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768380121499}
+[00:15:51.223] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:15:51.223] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:15:52.401] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:15:52.401] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:52.996] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 3/3)
+[00:15:54.312] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 3/3)
+[00:15:57.049] Browser WARN    WebSocket connection error - server unavailable
+[00:15:57.049] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:57.049] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:58.093] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:58.093] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:15:58.093] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 1/3)
+[00:15:58.177] Browser WARN    WebSocket connection error - server unavailable
+[00:15:58.178] Browser LOG     Entering fallback mode - collaboration disabled
+[00:15:58.178] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:15:58.729] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:58.729] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/test-editor color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/test-editor","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768380139206}
+[00:16:04.023] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:16:04.023] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:04.686] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:16:04.686] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:06.878] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:16:06.879] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:16:07.869] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 2/3)
+[00:16:08.242] Browser WARN    WebSocket connection error - server unavailable
+[00:16:08.242] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:08.242] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:08.242] Browser WARN    WebSocket connection error - server unavailable
+[00:16:08.242] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:08.242] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:08.242] Browser WARN    WebSocket connection error - server unavailable
+[00:16:08.242] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:08.242] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:08.301] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:16:08.302] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:10.245] Browser WARN    WebSocket connection error - server unavailable
+[00:16:10.245] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:10.245] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:10.245] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 3/3)
+[00:16:12.254] Browser WARN    WebSocket connection error - server unavailable
+[00:16:12.254] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:12.254] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:16.405] Browser WARN    WebSocket connection error - server unavailable
+[00:16:16.405] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:16.405] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:17.666] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:17.666] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:16:17.667] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 1/3)
+[00:16:17.800] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:16:17.800] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/test-editor color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/test-editor","r":"","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768380157983}
+[00:16:21.126] Browser WARN    WebSocket connection error - server unavailable
+[00:16:21.126] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:21.126] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:21.126] Browser WARN    WebSocket connection error - server unavailable
+[00:16:21.126] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:21.126] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:22.942] Browser WARN    WebSocket connection error - server unavailable
+[00:16:22.942] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:16:22.942] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:24.818] Browser WARN    WebSocket connection error - server unavailable
+[00:16:24.818] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:24.818] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:24.957] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 2/3)
+[00:16:26.833] Browser WARN    WebSocket connection error - server unavailable
+[00:16:26.833] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:26.833] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:27.090] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:16:27.090] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:16:28.887] Browser WARN    WebSocket connection error - server unavailable
+[00:16:28.887] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:28.887] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:29.088] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 3/3)
+[00:16:30.056] Browser ERROR   unhandledRejection: {"type":"cancelation","msg":"operation is manually canceled"}
+[00:16:30.939] Browser WARN    WebSocket connection error - server unavailable
+[00:16:30.939] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:30.939] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:33.112] Browser WARN    WebSocket connection error - server unavailable
+[00:16:33.112] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:33.112] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:34.978] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:16:34.979] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:35.047] Browser WARN    WebSocket connection error - server unavailable
+[00:16:35.047] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:35.047] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:37.059] Browser WARN    WebSocket connection error - server unavailable
+[00:16:37.059] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:37.060] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:39.112] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:16:39.113] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:39.113] Browser WARN    WebSocket connection error - server unavailable
+[00:16:39.113] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:39.113] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:41.122] Browser WARN    WebSocket connection error - server unavailable
+[00:16:41.122] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:41.122] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:43.154] Browser WARN    WebSocket connection error - server unavailable
+[00:16:43.155] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:43.155] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:45.180] Browser WARN    WebSocket connection error - server unavailable
+[00:16:45.180] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:45.180] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:47.218] Browser WARN    WebSocket connection error - server unavailable
+[00:16:47.218] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:47.218] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:48.801] Browser WARN    Invalid access: Add Yjs type to a document before reading data.
+[00:16:48.801] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 1/3)
+[00:16:48.801] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:16:48.801] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/test-editor color: rgb(120, 120, 120) color: inherit {"o":"http://localhost:3000/test-editor","sdkn":"@vercel/analytics/react","sdkv":"1.6.1","sv":"0.1.3","ts":1768380046434}
+[00:16:48.801] Browser WARN    WebSocket connection error - server unavailable
+[00:16:48.801] Browser LOG     Retrying connection in 2000ms... (1/3)
+[00:16:48.801] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:49.080] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 2/3)
+[00:16:49.080] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:16:49.080] Browser LOG     Retrying connection in 2000ms... (2/3)
+[00:16:49.648] Browser ERROR   unhandledRejection: {"type":"cancelation","msg":"operation is manually canceled"}
+[00:16:49.801] Browser WARN    WebSocket connection error - server unavailable
+[00:16:49.801] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:49.801] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:51.324] Browser WARN    WebSocket connection error - server unavailable
+[00:16:51.324] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:51.324] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:52.096] Browser LOG     Attempting WebSocket connection to: ws://localhost:3001 (Attempt 3/3)
+[00:16:52.096] Browser WARN    WebSocket connection error - server unavailable
+[00:16:52.096] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:52.096] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:54.052] Browser WARN    WebSocket connection error - server unavailable
+[00:16:54.052] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:54.052] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:54.182] Browser WARN    WebSocket connection error - server unavailable
+[00:16:54.182] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:54.182] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:55.695] Browser WARN    WebSocket connection error - server unavailable
+[00:16:55.696] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:55.696] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:56.434] Browser WARN    WebSocket connection error - server unavailable
+[00:16:56.435] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:56.435] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:57.438] Browser WARN    WebSocket connection error - server unavailable
+[00:16:57.438] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:57.438] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:59.492] Browser WARN    WebSocket connection error - server unavailable
+[00:16:59.492] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:59.492] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:16:59.819] Browser WARN    WebSocket connection error - server unavailable
+[00:16:59.819] Browser LOG     Entering fallback mode - collaboration disabled
+[00:16:59.819] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:01.737] Browser WARN    WebSocket connection error - server unavailable
+[00:17:01.737] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:01.737] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:03.699] Browser WARN    WebSocket connection error - server unavailable
+[00:17:03.699] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:03.699] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:03.776] Browser WARN    WebSocket connection error - server unavailable
+[00:17:03.776] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:03.776] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:06.374] Browser WARN    WebSocket connection error - server unavailable
+[00:17:06.374] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:06.374] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:06.794] Browser WARN    WebSocket connection error - server unavailable
+[00:17:06.794] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:06.794] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:07.824] Browser WARN    WebSocket connection error - server unavailable
+[00:17:07.824] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:07.824] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:09.682] Browser WARN    WebSocket connection error - server unavailable
+[00:17:09.682] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:09.682] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:10.093] Browser WARN    WebSocket connection error - server unavailable
+[00:17:10.093] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:10.093] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:10.093] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:17:10.093] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:10.093] Browser WARN    WebSocket connection error - server unavailable
+[00:17:10.093] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:10.093] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:10.093] Browser WARN    WebSocket connection error - server unavailable
+[00:17:10.093] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:10.093] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:10.093] Browser WARN    WebSocket connection timeout - server may be unavailable
+[00:17:10.093] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:11.727] Browser WARN    WebSocket connection error - server unavailable
+[00:17:11.727] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:11.727] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:19.920] Browser WARN    WebSocket connection error - server unavailable
+[00:17:19.920] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:19.920] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:26.039] Browser WARN    WebSocket connection error - server unavailable
+[00:17:26.039] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:26.039] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:28.081] Browser WARN    WebSocket connection error - server unavailable
+[00:17:28.081] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:28.081] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:30.117] Browser WARN    WebSocket connection error - server unavailable
+[00:17:30.117] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:30.117] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:34.191] Browser WARN    WebSocket connection error - server unavailable
+[00:17:34.191] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:34.191] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:38.132] Browser WARN    WebSocket connection error - server unavailable
+[00:17:38.132] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:38.132] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:38.277] Browser WARN    WebSocket connection error - server unavailable
+[00:17:38.277] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:38.277] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:41.601] Browser WARN    WebSocket connection error - server unavailable
+[00:17:41.601] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:41.601] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:43.853] Browser WARN    WebSocket connection error - server unavailable
+[00:17:43.853] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:43.853] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:46.277] Browser WARN    WebSocket connection error - server unavailable
+[00:17:46.277] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:46.277] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:47.844] Browser WARN    WebSocket connection error - server unavailable
+[00:17:47.844] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:47.844] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:48.298] Browser WARN    WebSocket connection error - server unavailable
+[00:17:48.298] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:48.298] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:48.298] Browser WARN    WebSocket connection error - server unavailable
+[00:17:48.298] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:48.298] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:48.298] Browser WARN    WebSocket connection error - server unavailable
+[00:17:48.298] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:48.298] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:49.604] Browser WARN    WebSocket connection error - server unavailable
+[00:17:49.605] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:49.605] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:53.720] Browser WARN    WebSocket connection error - server unavailable
+[00:17:53.720] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:53.720] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:55.760] Browser WARN    WebSocket connection error - server unavailable
+[00:17:55.760] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:55.760] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:17:57.798] Browser WARN    WebSocket connection error - server unavailable
+[00:17:57.798] Browser LOG     Entering fallback mode - collaboration disabled
+[00:17:57.798] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:00.978] Browser WARN    WebSocket connection error - server unavailable
+[00:18:00.978] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:00.979] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:02.585] Browser WARN    WebSocket connection error - server unavailable
+[00:18:02.585] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:02.585] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:02.585] Browser WARN    WebSocket connection error - server unavailable
+[00:18:02.585] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:02.585] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:02.586] Browser WARN    WebSocket connection error - server unavailable
+[00:18:02.605] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:02.605] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:07.264] Browser WARN    WebSocket connection error - server unavailable
+[00:18:07.264] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:07.264] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:07.264] Browser WARN    WebSocket connection error - server unavailable
+[00:18:07.265] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:07.265] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:09.238] Browser WARN    WebSocket connection error - server unavailable
+[00:18:09.239] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:09.239] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:11.273] Browser WARN    WebSocket connection error - server unavailable
+[00:18:11.273] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:11.273] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:12.711] Browser WARN    WebSocket connection error - server unavailable
+[00:18:12.711] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:12.711] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:13.362] Browser WARN    WebSocket connection error - server unavailable
+[00:18:13.362] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:13.362] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:13.362] Browser WARN    WebSocket connection error - server unavailable
+[00:18:13.362] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:13.362] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:13.362] Browser WARN    WebSocket connection error - server unavailable
+[00:18:13.362] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:13.362] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:18.525] Browser WARN    WebSocket connection error - server unavailable
+[00:18:18.525] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:18.525] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:18.525] Browser WARN    WebSocket connection error - server unavailable
+[00:18:18.525] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:18.525] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:18.525] Browser WARN    WebSocket connection error - server unavailable
+[00:18:18.525] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:18.525] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:19.450] Browser WARN    WebSocket connection error - server unavailable
+[00:18:19.451] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:19.451] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:21.604] Browser WARN    WebSocket connection error - server unavailable
+[00:18:21.604] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:21.605] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:23.522] Browser WARN    WebSocket connection error - server unavailable
+[00:18:23.522] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:23.522] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:25.968] Browser WARN    WebSocket connection error - server unavailable
+[00:18:25.968] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:25.968] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:27.612] Browser WARN    WebSocket connection error - server unavailable
+[00:18:27.612] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:27.612] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:31.654] Browser ERROR   unhandledRejection: {"type":"cancelation","msg":"operation is manually canceled"}
+[00:18:31.785] Browser WARN    WebSocket connection error - server unavailable
+[00:18:31.785] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:31.785] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:36.187] Browser WARN    WebSocket connection error - server unavailable
+[00:18:36.187] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:36.187] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:38.046] Browser WARN    WebSocket connection error - server unavailable
+[00:18:38.047] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:38.047] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:39.124] Browser WARN    WebSocket connection error - server unavailable
+[00:18:39.124] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:39.124] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:39.124] Browser WARN    WebSocket connection error - server unavailable
+[00:18:39.124] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:39.124] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:39.310] Browser ERROR   unhandledRejection: {"type":"cancelation","msg":"operation is manually canceled"}
+[00:18:40.590] Browser WARN    WebSocket connection error - server unavailable
+[00:18:40.590] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:40.591] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:42.031] Browser WARN    WebSocket connection error - server unavailable
+[00:18:42.031] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:42.031] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:44.103] Browser WARN    WebSocket connection error - server unavailable
+[00:18:44.103] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:44.103] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:47.974] Browser WARN    WebSocket connection error - server unavailable
+[00:18:47.974] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:47.974] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:48.088] Browser WARN    WebSocket connection error - server unavailable
+[00:18:48.088] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:48.088] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:50.135] Browser WARN    WebSocket connection error - server unavailable
+[00:18:50.135] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:50.135] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:52.734] Browser WARN    WebSocket connection error - server unavailable
+[00:18:52.734] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:52.734] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:54.224] Browser WARN    WebSocket connection error - server unavailable
+[00:18:54.224] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:54.224] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:56.354] Browser WARN    WebSocket connection error - server unavailable
+[00:18:56.354] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:56.355] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:18:58.742] Browser WARN    WebSocket connection error - server unavailable
+[00:18:58.742] Browser LOG     Entering fallback mode - collaboration disabled
+[00:18:58.742] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:00.382] Browser WARN    WebSocket connection error - server unavailable
+[00:19:00.382] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:00.382] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:02.484] Browser WARN    WebSocket connection error - server unavailable
+[00:19:02.484] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:02.484] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:09.891] Browser WARN    WebSocket connection error - server unavailable
+[00:19:09.891] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:09.891] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:10.005] Browser WARN    WebSocket connection error - server unavailable
+[00:19:10.006] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:10.006] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:10.006] Browser WARN    WebSocket connection error - server unavailable
+[00:19:10.006] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:10.006] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:10.006] Browser WARN    WebSocket connection error - server unavailable
+[00:19:10.006] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:10.006] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:11.178] Browser WARN    WebSocket connection error - server unavailable
+[00:19:11.178] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:11.178] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:11.340] Browser WARN    WebSocket connection error - server unavailable
+[00:19:11.341] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:11.341] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:11.341] Browser WARN    WebSocket connection error - server unavailable
+[00:19:11.341] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:11.341] Browser WARN    WebSocket connection closed abnormally - server may be down
+[00:19:12.671] Browser WARN    WebSocket connection error - server unavailable
+[00:19:12.671] Browser LOG     Entering fallback mode - collaboration disabled
+[00:19:12.671] Browser WARN    WebSocket connection closed abnormally - server may be down

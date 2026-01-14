@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # Next.js Frontend
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_WS_URL=ws://localhost:3001
+    depends_on:
+      - server
+
+  # Node.js WebSocket Server
+  server:
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - MONGODB_URL=mongodb://mongo:27017/collab-editor
+      - PORT=3001
+    depends_on:
+      - redis
+      - mongo
+    volumes:
+      - ./server:/app
+
+  # Redis for Pub/Sub
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+  # MongoDB for Persistence
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

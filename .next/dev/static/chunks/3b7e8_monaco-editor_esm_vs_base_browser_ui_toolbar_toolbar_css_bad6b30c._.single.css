@@ -1,0 +1,16 @@
+/* [project]/node_modules/.pnpm/monaco-editor@0.55.1/node_modules/monaco-editor/esm/vs/base/browser/ui/toolbar/toolbar.css [app-client] (css) */
+.monaco-toolbar {
+  height: 100%;
+}
+
+.monaco-toolbar .toolbar-toggle-more {
+  padding: 0;
+  display: inline-block;
+}
+
+.monaco-toolbar.responsive .monaco-action-bar > .actions-container > .action-item {
+  flex-shrink: 1;
+  min-width: 20px;
+}
+
+/*# sourceMappingURL=3b7e8_monaco-editor_esm_vs_base_browser_ui_toolbar_toolbar_css_bad6b30c._.single.css.map*/

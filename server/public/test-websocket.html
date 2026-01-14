@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-time Code Collaboration</title>
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --success-color: #2ecc71;
+            --danger-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --dark-bg: #2c3e50;
+            --text-color: #333;
+            --border-color: #ddd;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f5f7fa;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            height: calc(100vh - 40px);
+        }
+        
+        .editor-container {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .editor-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .editor-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .status-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #e74c3c;
+        }
+        
+        .status-indicator.connected {
+            background-color: #2ecc71;
+        }
+        
+        #editor {
+            flex: 1;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .sidebar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-width: 300px;
+        }
+        
+        .users-panel, .chat-panel {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .panel-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            font-weight: 500;
+        }
+        
+        .users-list {
+            padding: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .user-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--secondary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .chat-messages {
+            padding: 15px;
+            height: 300px;
+            overflow-y: auto;
+            background-color: #fafafa;
+        }
+        
+        .message {
+            margin-bottom: 12px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            background: white;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .message-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+            font-size: 0.85em;
+            color: #666;
+        }
+        
+        .message-sender {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .message-time {
+            color: #999;
+        }
+        
+        .chat-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #eee;
+        }
+        
+        #chat-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+        
+        .cursor {
+            position: absolute;
+            border-left: 2px solid #000;
+            height: 1.2em;
+            margin-left: -1px;
+            pointer-events: none;
+        }
+        
+        .cursor-label {
+            position: absolute;
+            top: -1.2em;
+            left: -2px;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            pointer-events: none;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Code Editor Section -->
+        <div class="editor-container">
+            <div class="editor-header">
+                <div>Collaborative Code Editor</div>
+                <div class="editor-status">
+                    <span>Status: </span>
+                    <span id="connection-status">Disconnected</span>
+                    <span class="status-indicator" id="status-indicator"></span>
+                </div>
+            </div>
+            <div id="editor">// Welcome to the collaborative code editor!
+// Start typing here to see real-time updates
+
+function helloWorld() {
+    console.log('Hello, World!');
+    return 'This is a collaborative code editor';
+}</div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Online Users -->
+            <div class="users-panel">
+                <div class="panel-header">
+                    Online Users <span id="user-count">0</span>
+                </div>
+                <div class="users-list" id="users-list">
+                    <!-- Users will be added here dynamically -->
+                </div>
+            </div>
+
+            <!-- Chat Section -->
+            <div class="chat-panel">
+                <div class="panel-header">
+                    Chat
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages will be added here -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off">
+                    <button class="btn btn-primary" id="send-message">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://unpkg.com/yjs@13.5.40/dist/yjs.js"></script>
+    <script src="https://unpkg.com/y-websocket@1.5.10/dist/y-websocket.js"></script>
+    <script src="https://unpkg.com/y-codemirror@1.0.8/dist/y-codemirror.js"></script>
+    
+    <!-- Our Collaboration Client -->
+    <script src="/collaboration.js"></script>
+    
+    <script>
+        // DOM Elements
+        const connectionStatus = document.getElementById('connection-status');
+        const statusIndicator = document.getElementById('status-indicator');
+        const userCountEl = document.getElementById('user-count');
+        const usersList = document.getElementById('users-list');
+        const chatMessages = document.getElementById('chat-messages');
+        const chatInput = document.getElementById('chat-input');
+        const sendMessageBtn = document.getElementById('send-message');
+        const editorEl = document.getElementById('editor');
+        
+        // Generate a random user ID and name for this session
+        const userId = 'user-' + Math.random().toString(36).substr(2, 9);
+        const userName = 'User-' + Math.floor(Math.random() * 1000);
+        const userColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        
+        // Initialize CodeMirror
+        const editor = CodeMirror.fromTextArea(editorEl, {
+            lineNumbers: true,
+            mode: 'javascript',
+            theme: 'monokai',
+            lineWrapping: true,
+            autoCloseBrackets: true,
+            matchBrackets: true,
+            indentUnit: 4,
+            extraKeys: {
+                'Ctrl-Enter': sendChatMessage,
+                'Cmd-Enter': sendChatMessage
+            }
+        });
+        
+        // Initialize Collaboration Client
+        const collabClient = new CollaborationClient({
+            serverUrl: 'ws://localhost:3001',
+            documentId: 'shared-document',
+            user: {
+                id: userId,
+                name: userName,
+                color: userColor
+            },
+            reconnect: true,
+            maxReconnectAttempts: 5
+        });
+        
+        // Event Listeners
+        sendMessageBtn.addEventListener('click', sendChatMessage);
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendChatMessage();
+            }
+        });
+        
+        // Handle incoming messages
+        collabClient.on('message', (data) => {
+            console.log('Message received:', data);
+            
+            if (data.type === 'chat') {
+                addChatMessage(data.user, data.message, data.timestamp);
+            } else if (data.type === 'user-joined') {
+                addSystemMessage(`${data.user.name} joined the session`);
+                updateUserList(data.users);
+            } else if (data.type === 'user-left') {
+                addSystemMessage(`${data.userName} left the session`);
+                updateUserList(data.users);
+            } else if (data.type === 'user-list') {
+                updateUserList(data.users);
+            }
+        });
+        
+        // Connection status updates
+        collabClient.on('connect', () => {
+            updateConnectionStatus(true);
+            addSystemMessage('Connected to collaboration server');
+        });
+        
+        collabClient.on('disconnect', () => {
+            updateConnectionStatus(false);
+            addSystemMessage('Disconnected from server');
+        });
+        
+        collabClient.on('error', (error) => {
+            console.error('Collaboration error:', error);
+            addSystemMessage(`Error: ${error.message}`, 'error');
+        });
+        
+        // UI Update Functions
+        function updateConnectionStatus(connected) {
+            connectionStatus.textContent = connected ? 'Connected' : 'Disconnected';
+            statusIndicator.className = 'status-indicator' + (connected ? ' connected' : '');
+        }
+        
+        function addChatMessage(user, message, timestamp) {
+            const messageEl = document.createElement('div');
+            messageEl.className = 'message';
+            
+            const time = new Date(timestamp).toLocaleTimeString();
+            
+            messageEl.innerHTML = `
+                <div class="message-header">
+                    <span class="message-sender" style="color: ${user.color}">${user.name}</span>
+                    <span class="message-time">${time}</span>
+                </div>
+                <div class="message-content">${escapeHtml(message)}</div>
+            `;
+            
+            chatMessages.appendChild(messageEl);
+            scrollToBottom(chatMessages);
+        }
+        
+        function addSystemMessage(message, type = 'info') {
+            const messageEl = document.createElement('div');
+            messageEl.className = `message system-message ${type}`;
+            messageEl.textContent = message;
+            chatMessages.appendChild(messageEl);
+            scrollToBottom(chatMessages);
+        }
+        
+        function updateUserList(users) {
+            usersList.innerHTML = '';
+            userCountEl.textContent = users.length;
+            
+            users.forEach(user => {
+                const userEl = document.createElement('div');
+                userEl.className = 'user-item';
+                userEl.innerHTML = `
+                    <div class="user-avatar" style="background-color: ${user.color}">
+                        ${user.name.charAt(0).toUpperCase()}
+                    </div>
+                    <span>${user.name}</span>
+                `;
+                usersList.appendChild(userEl);
+            });
+        }
+        
+        function sendChatMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+            
+            collabClient.send({
+                type: 'chat',
+                message: message
+            });
+            
+            // Add message to local chat
+            addChatMessage({
+                id: userId,
+                name: userName,
+                color: userColor
+            }, message, new Date().toISOString());
+            
+            // Clear input
+            chatInput.value = '';
+            chatInput.focus();
+        }
+        
+        // Helper Functions
+        function scrollToBottom(element) {
+            element.scrollTop = element.scrollHeight;
+        }
+        
+        function escapeHtml(unsafe) {
+            return unsafe
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+        
+        // Initialize Y.js for collaborative editing
+        const ydoc = new Y.Doc();
+        const ytext = ydoc.getText('codemirror');
+        
+        // Connect to the WebSocket server
+        const wsProvider = new WebsocketProvider(
+            'ws://localhost:3001',
+            'shared-document',
+            ydoc
+        );
+        
+        // Bind Y.js to CodeMirror
+        const binding = new CodeMirrorBinding(ytext, editor, new Observable.fromEvent('update', editor));
+        
+        // Set document title with user name
+        document.title = `${userName}'s Collaborative Editor`;
+        
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', () => {
+            // Focus the chat input when the page loads
+            chatInput.focus();
+            
+            // Notify other users that we've joined
+            collabClient.send({
+                type: 'user-joined',
+                user: {
+                    id: userId,
+                    name: userName,
+                    color: userColor
+                }
+            });
+            
+            // Request the current user list
+            collabClient.send({
+                type: 'get-users'
+            });
+        });
+        
+        // Handle page unload
+        window.addEventListener('beforeunload', () => {
+            // Notify other users that we're leaving
+            collabClient.send({
+                type: 'user-left',
+                userId: userId,
+                userName: userName
+            });
+            
+            // Clean up
+            if (wsProvider) {
+                wsProvider.destroy();
+            }
+            
+            if (collabClient) {
+                collabClient.disconnect();
+            }
+        });
+        
+        // Handle keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Focus chat input when pressing '/' (but not when already in an input)
+            if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+                e.preventDefault();
+                chatInput.focus();
+            }
+            
+            // Focus editor when pressing 'Escape'
+            if (e.key === 'Escape' && document.activeElement === chatInput) {
+                editor.focus();
+            }
+        });
+        
+        // Initialize the editor with some sample content if empty
+        if (!editor.getValue().trim()) {
+    editor.setValue(`// Welcome to the collaborative code editor!\n// Start typing here to see real-time updates\n\nfunction helloWorld() {\n    console.log('Hello, World!');\n    return 'This is a collaborative code editor';\n}\n\n// Multiple users can edit this document simultaneously\n// Changes are synced in real-time`);
+}
+// All initialization and event handlers are now properly closed. No stray code below this point.
+            
+        
+        function disconnectWebSocket() {
+            if (ws) {
+                logMessage('Disconnecting from server...', 'info');
+                ws.close();
+                ws = null;
+            }
+        }
+        
+        // Event listeners
+        connectBtn.addEventListener('click', connectWebSocket);
+        disconnectBtn.addEventListener('click', disconnectWebSocket);
+        
+        messageForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            if (!ws || ws.readyState !== WebSocket.OPEN) {
+                logMessage('Not connected to server', 'error');
+                return;
+            }
+            
+            const message = messageInput.value.trim();
+            if (!message) return;
+            
+            const messageObj = {
+                type: 'chat',
+                message: message,
+                timestamp: new Date().toISOString()
+            };
+            
+            ws.send(JSON.stringify(messageObj));
+            logMessage(`You: ${message}`, 'client');
+            messageInput.value = '';
+        });
+        
+        // Initial connection
+        connectWebSocket();
+    </script>
+</body>
+</html>

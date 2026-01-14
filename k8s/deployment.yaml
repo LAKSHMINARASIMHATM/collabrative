@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: real-time-code-editor
+  labels:
+    app: real-time-code-editor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: real-time-code-editor
+  template:
+    metadata:
+      labels:
+        app: real-time-code-editor
+    spec:
+      containers:
+      - name: real-time-code-editor
+        image: your-docker-username/real-time-code-editor:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: "production"
+        - name: LIVEBLOCKS_SECRET_KEY
+          valueFrom:
+            secretKeyRef:
+              name: real-time-code-editor-secrets
+              key: liveblocks-secret-key
+        resources:
+          limits:
+            cpu: "1"
+            memory: "1Gi"
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 5
